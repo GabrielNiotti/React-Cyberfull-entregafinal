@@ -1,0 +1,60 @@
+
+.contenedor {
+  /*Asegura espacio justo en la columna de la tarjeta*/
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+  box-sizing: border-box;
+}
+
+.contenedor:hover {
+  transform: translateY(-5px);
+}
+
+.contacto {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 25px;
+  width: 280px !important;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.foto {
+  /* Tamaño fijo pasa las fotos*/
+  width: 80px;
+  height: 80px;
+
+  /* Foto circular*/
+  border-radius: 50%;
+
+  /*Evita que la imagen se estire*/
+  object-fit: cover;
+
+  /*Centra imagen en contenedor flex*/
+  border: 2px solid red;
+}
+.cardBody h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+
+}
+
+.cardBody p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.cardBody small {
+    font-size: 0.85rem;
+    color: #007bff; /* Color azul elegante para el email */
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camara Instantánea",
+    "precio": 85000,
+    "stock": 22,
+    "imagen": "/images/nikon-z6.jpg",
+    "destacado": false,
+    "descripcion": "Cámara sin espejo (mirrorless) de formato completo (full frame) con un sensor de 24.5 megapíxeles, procesador de imagen EXPEED 6, sistema de enfoque automático híbrido con 273 puntos, grabación de video en 4K UHD a 30 fps, pantalla táctil abatible y conectividad Wi-Fi y Bluetooth integrada."
+  },
+  {
+    "id": 2,
+    "nombre": "Camara Nikon",
+    "precio": 97500,
+    "stock": 2,
+    "imagen": "/images/d850.jpg",
+    "destacado": false,
+    "descripcion": "Cámara réflex digital de formato completo (full frame) con un sensor de 45.7 megapíxeles, procesador de imagen EXPEED 5, sistema de enfoque automático con 153 puntos, grabación de video en 4K UHD a 30 fps, pantalla LCD fija y conectividad Wi-Fi integrada."
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor Samsung",
+    "precio": 110000,
+    "stock": 2,
+    "imagen": "/images/Q80T.jpg",
+    "destacado": true,
+    "descripcion": "Monitor de 32 pulgadas con resolución 4K UHD (3840 x 2160 píxeles), panel VA, tasa de refresco de 144 Hz, tiempo de respuesta de 1 ms, compatibilidad con HDR10, tecnología AMD FreeSync Premium Pro y conectividad HDMI y DisplayPort."
+  },
+  {
+    "id": 4,
+    "nombre": "Homepad-mini",
+    "precio": 150000,
+    "stock": 5,
+    "imagen": "/images/homepod-mini.jpg",
+    "destacado": true,
+    "descripcion": "Altavoz inteligente compacto con diseño esférico, sonido de alta calidad con tecnología de audio computacional, integración con el ecosistema Apple, control por voz a través de Siri, compatibilidad con AirPlay 2 y funciones de hogar inteligente."
+  },
+  {
+    "id": 5,
+    "nombre": "Iphone 12 pro gold",
+    "precio": 2500000,
+    "stock": 3,
+    "imagen": "/images/iphone-12-pro-gold.png",
+    "destacado": false,
+    "descripcion": "Smartphone con pantalla Super Retina XDR de 6.1 pulgadas, procesador A14 Bionic, sistema de cámara triple con sensor LiDAR, grabación de video en Dolby Vision HDR, resistencia al agua y al polvo con certificación IP68, y conectividad 5G."
+  },
+  {
+    "id": 6,
+    "nombre": "Notebook Hp Omen 16",
+    "precio": 1800000,
+    "stock": 10,
+    "imagen": "/images/hpOmen-16.webp",
+    "destacado": false,
+    "descripcion": "Notebook gaming con procesador Intel Core i7, tarjeta gráfica NVIDIA RTX 3070, 16 GB de RAM, almacenamiento SSD de 1 TB y pantalla de 16 pulgadas."
+  },
+  {
+    "id": 7,
+    "nombre": "Notebook Lenovo V 15",
+    "precio": 125000,
+    "stock": 2,
+    "imagen": "/images/lenovo-V-15.webp",
+    "destacado": true,
+    "descripcion": "Notebook de escritorio con procesador Intel Core i5, 8 GB de RAM, almacenamiento SSD de 256 GB y pantalla de 15.6 pulgadas."
+  },
+  {
+    "id": 8,
+    "nombre": "Parlante Marchall",
+    "precio": 100000,
+    "stock": 5,
+    "imagen": "/images/marshall-acton.jpg",
+    "destacado": false,
+    "descripcion": "Parlante portátil con diseño clásico, sonido de alta calidad y conectividad Bluetooth."
+  }
+]

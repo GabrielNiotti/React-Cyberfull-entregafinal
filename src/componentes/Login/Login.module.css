@@ -1,0 +1,106 @@
+/* Centrado absoluto en toda la pantalla */
+.loginPagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Ocupa la mayor parte de la pantalla vertical */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Tarjeta contenedora del formulario */
+.loginTarjeta {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Tamaño máximo en computadoras */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.titulo {
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Espaciado vertical entre inputs y botón */
+}
+
+.campoGrupo {
+  width: 100%;
+}
+
+/* Inputs responsivos y estilizados */
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #0886b8; /* Combina con el celeste de tu Header */
+  box-shadow: 0 0 0 3px rgba(8, 134, 184, 0.2);
+}
+
+/* Botón estilizado */
+.btnIngresar {
+  width: 100%;
+  padding: 12px;
+  background-color: #0886b8; /* Mismo celeste de tu Header */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btnIngresar:hover {
+  background-color: #066d96;
+}
+
+.btnIngresar:active {
+  transform: scale(0.98);
+}
+
+.textoRegistro {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+.enlace {
+  color: #0886b8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.enlace:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Optimización para pantallas muy pequeñas (celulares) */
+@media (max-width: 480px) {
+  .loginTarjeta {
+    padding: 25px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra más sutil */
+  }
+
+  .titulo {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+}

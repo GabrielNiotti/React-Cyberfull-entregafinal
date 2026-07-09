@@ -1,0 +1,183 @@
+/* ==========================================================================
+   ESTILOS GENERALES Y CONTENEDORES
+   ========================================================================== */
+
+/* Contenedor principal que centra todo el contenido en la página */
+.contenedorGestion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente los títulos y el formulario */
+}
+
+.titulo {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitulo {
+  color: #34495e;
+  font-size: 1.5rem;
+  margin: 30px 0 15px 0;
+  text-align: center;
+}
+
+.separador {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+/* ==========================================================================
+   LISTA DE PRODUCTOS Y TARJETAS
+   ========================================================================== */
+
+/* Contenedor de la lista: elimina viñetas y centra los elementos */
+.listaProductos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 800px; /* Evita que la lista se estire infinitamente en pantallas gigantes */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cada fila o tarjeta de producto */
+.itemProducto {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; /* Alinea texto a la izquierda y botones a la derecha */
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.itemProducto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.infoProducto {
+  font-size: 1.05rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   CONTENEDOR DE BOTONES Y BOTONES INDIVIDUALES
+   ========================================================================== */
+
+/* Contenedor que agrupa los botones Editar y Eliminar en fila */
+.acciones {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Botón de editar estilizado */
+.botonEditar {
+  background-color: #3498db; /* Azul moderno */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.1s;
+  min-width: 90px;
+}
+
+.botonEditar:hover {
+  background-color: #2980b9;
+}
+
+.botonEditar:active {
+  transform: scale(0.97);
+}
+
+/* Botón de eliminar estilizado */
+.botonEliminar {
+  background-color: #e74c3c; /* Rojo */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.1s;
+  min-width: 90px;
+}
+
+.botonEliminar:hover {
+  background-color: #c0392b;
+}
+
+.botonEliminar:active {
+  transform: scale(0.97);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES: Ajustes dinámicos según el tamaño de la pantalla
+   ========================================================================== */
+
+/* Para Tablets y pantallas medianas (Menores a 768px) */
+@media (max-width: 768px) {
+  .contenedorGestion {
+    padding: 15px;
+  }
+  
+  .titulo {
+    font-size: 1.7rem;
+  }
+
+  .listaProductos {
+    max-width: 100%; /* Toma todo el ancho disponible */
+  }
+}
+
+/* Para Celulares y pantallas pequeñas (Menores a 480px) */
+@media (max-width: 480px) {
+  .itemProducto {
+    flex-direction: column; /* Apila el texto arriba y las acciones abajo */
+    gap: 14px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .acciones {
+    width: 100%; /* El contenedor de botones toma todo el ancho */
+    flex-direction: row; /* Mantiene los botones uno al lado del otro */
+    gap: 10px;
+  }
+
+  .botonEditar, 
+  .botonEliminar {
+    flex: 1; /* Distribuye el ancho equitativamente (50% cada uno) */
+    width: 100%;
+    padding: 12px;
+    height: 42px; /* Área de toque más cómoda para dedos */
+    font-size: 15px;
+  }
+}

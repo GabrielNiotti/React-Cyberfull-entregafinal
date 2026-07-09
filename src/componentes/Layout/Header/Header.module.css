@@ -1,0 +1,257 @@
+.contenedorHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0886b8;
+  width: 100%;
+  padding: 15px 0;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+.logo {
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+}
+.titulo {
+  color: black;
+  margin: 1;
+  font-size: 3rem;
+}
+.subtitulo {
+  color: #333;
+  margin: 0;
+  font-size: 1.5rem;
+  gap: 30px;
+}
+
+/* Modificado: Añadido display flex vertical para empujar el bloque de usuario abajo */
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.lista-grid {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.lista-grid li a {
+  color: black;
+  text-decoration: none;
+}
+.lista-grid li a:hover {
+  color: #fff;
+  text-shadow:
+    0 0 8px #00d4ff,
+    0 0 15px #00d4ff;
+  background-color: transparent;
+}
+
+.menuIcon {
+  display: none; /* Oculto en computadoras */
+  background: transparent !important; 
+  border: none !important;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25px; 
+  z-index: 1001; 
+  padding: 5px;
+}
+.menuIcon svg {
+  color: #000000 !important; 
+  width: 32px !important; 
+  height: 32px !important;
+  display: block;
+}
+
+/* ✨ NUEVAS CLASES PARA EL BLOQUE DE USUARIO (Escritorio por defecto) */
+.usuarioContenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15); /* Línea sutil divisoria blanca/gris */
+  margin-top: 10px;
+}
+
+.usuarioBloque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Si el email es largo, baja el botón automáticamente */
+  max-width: 90%;
+  text-align: center;
+}
+
+.saludo {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.btnCerrarSesion {
+  background-color: #dc3545; /* Rojo de alerta moderno */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap; 
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btnCerrarSesion:hover {
+  background-color: #bd2130;
+}
+
+.btnCerrarSesion:active {
+  transform: scale(0.97);
+}
+
+/* 1. TABLETS (Pantallas medianas - hasta 1024px) */
+@media (max-width: 1024px) {
+  .logo {
+    width: 240px; 
+  }
+  .titulo {
+    font-size: 2.5rem;
+  }
+  .lista-grid {
+    gap: 15px;
+    font-size: 18px;
+  }
+}
+
+/* 2. CELULARES GRANDES / TABLETS VERTICAL (hasta 768px) */
+@media (max-width: 768px) {
+  .contenedorHeader {
+    padding: 20px 0;
+  }
+
+  .logo {
+    align-self: center; 
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .subtitulo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .menuIcon {
+    display: block; 
+  }
+
+  /* Modificado: Inicialmente oculto mediante display none */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #87ceeb; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding-bottom: 15px;
+  }
+
+  /* Modificado: Cuando se activa el menú responsive, se comporta como columna flex */
+  .menuActivo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lista-grid {
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 15px;
+    gap: 12px;
+  }
+
+  /* Ajuste responsivo del bloque de usuario dentro del menú desplegable */
+  .usuarioContenedor {
+    border-top: 1px solid rgba(255, 255, 255, 0.4); /* Línea blanca sobre fondo celeste */
+    padding: 15px 10px 0 10px;
+  }
+  
+  .usuarioBloque {
+    flex-direction: column; /* Se apila verticalmente en celulares */
+    gap: 10px;
+  }
+
+  .btnCerrarSesion {
+    width: 100%;
+    max-width: 180px; /* Evita que ocupe todo el ancho en mobile */
+  }
+}
+
+/* 3. CELULARES PEQUEÑOS (hasta 480px) */
+@media (max-width: 480px) {
+  .logo {
+    width: 160px; 
+  }
+
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .lista-grid {
+    flex-direction: column; 
+    align-items: center;
+    gap: 8px;
+  }
+
+  .lista-grid li a {
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+  }
+  
+  .saludo {
+  font-size: 1.15rem; /* 🚀 Subido de 1rem a 1.15rem (un poquito más grande y legible) */
+  color: #222;
+  font-weight: 600;   /* Cambiado a 600 para darle un toque más de grosor si lo deseas */
+  line-height: 1.4;
+}
+
+}
+
+/* 4. PANTALLAS MUY GRANDES (Opcional - más de 1440px) */
+@media (min-width: 1440px) {
+  .contenedorHeader {
+    padding: 30px 0;
+  }
+  .titulo {
+    font-size: 4rem; 
+  }
+}

@@ -1,0 +1,132 @@
+/* Contenedor del producto modificado a camelCase */
+.contenedorCarrito {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+
+}
+
+.contenedorCarrito h1 {
+  text-align: center; 
+  font-size: 2rem;
+  margin-bottom: 30px;
+
+}
+
+.listaProductos {
+  width: 100%;
+}
+
+.itemCarrito {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+} 
+
+/* Tu estilo original de imagen intacto */
+.imagenProducto {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* 👇 Controla que los textos se apilen hacia abajo y limpia espacios */
+.infoProducto {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.infoProducto h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #222
+}
+
+.infoProducto p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.resumenCompra {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.resumenCarrito h3 {
+  margin: 0;
+  font-size: 1.5rem;         /* Total a pagar destacado */
+  color: #111;
+}
+
+/* Tu estilo original del botón intacto */
+.botonVaciar {
+  background-color: #dc3545; 
+  color: #121213;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.botonVaciar:hover {
+  background-color: #bd2130; 
+}
+
+.botonVaciar:active {
+  transform: scale(0.98);
+}
+.botonVolver {
+  background-color: #007bff; 
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.botonVolver:hover {
+  background-color: #0069d9; 
+}
+
+.botonVolver:active {
+  transform: scale(0.98);
+}
+
+.botonCheckout {
+  background-color: #28a745; 
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.botonCheckout:hover {
+  background-color: #218838; 
+}
+
+.botonCheckout:active {
+  transform: scale(0.98);
+}

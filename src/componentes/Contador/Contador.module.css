@@ -1,0 +1,24 @@
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;            /* Espacio entre botones y número */
+  margin: 15px 0;
+}
+
+.boton {
+  width: 40px;          /* Ancho del botón */
+  height: 40px;         /* Alto del botón */
+  font-size: 20px;      /* Tamaño del texto (+ o -) */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.numero {
+  font-size: 22px;      /* Tamaño del número de la cantidad */
+  font-weight: bold;
+  min-width: 30px;      /* Evita que se mueva el diseño al cambiar de dígito */
+  text-align: center;
+}

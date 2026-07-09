@@ -1,0 +1,20 @@
+/* Footer.module.css */
+.footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.equipoGrid {
+    width: 100% !important;
+    display: block !important; /* Permitimos que el Grid de Directorio tome todo el control */
+}
+

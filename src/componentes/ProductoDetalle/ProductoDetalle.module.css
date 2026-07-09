@@ -1,0 +1,77 @@
+/* Contenedor principal alineado y centrado en la pantalla (Tu código) */
+.contenedorDetalle {
+  padding: 20px;
+  max-width: 800px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedorDetalle h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 24px;
+}
+
+/* Tarjeta contenedora del producto */
+.tarjetaDetalle {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para la imagen del producto */
+.imagen {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.tarjetaDetalle h3 {
+  font-size: 1.6rem;
+  color: #111;
+  margin: 10px 0;
+}
+
+.categoria {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* Bloque de descripción optimizado para lectura (Tu código) */
+.descripcion {
+  width: 100%;
+  max-width: 500px; 
+  line-height: 1.6; 
+  white-space: pre-line; 
+  color: #333; 
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left; /* Alineado a la izquierda para párrafos largos */
+}
+
+/* Precios y stock final */
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 8px;
+}
+
+.stock {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}

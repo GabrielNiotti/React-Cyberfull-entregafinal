@@ -1,0 +1,20 @@
+/* Inicio.module.css */
+
+.contenedorInicio {
+  padding: 20px;
+  text-align: center;
+  background-color: orange; /* Fondo naranja para toda la página de inicio */
+  min-height: 100vh;        /* Para que el fondo ocupe toda la pantalla */
+}
+
+/* 
+  Targetea la clase global o la estructura interna de Productos 
+  SOLO cuando está dentro de .contenedorInicio 
+*/
+.contenedorInicio :global(.Productos_grilla__3A7bX), /* Si usas CSS modules estricto */
+.contenedorInicio div[class*="grilla"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

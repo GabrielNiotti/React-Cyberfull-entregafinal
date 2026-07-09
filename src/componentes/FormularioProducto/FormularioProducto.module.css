@@ -1,0 +1,76 @@
+/* Estilos para el contenedor del formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  gap: 16px;
+}
+
+/* Estilos para todos los inputs y selectores */
+.input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el botón de guardado */
+.btnGuardar {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2563eb; /* Azul moderno */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover sobre el botón */
+.btnGuardar:hover {
+  background-color: #1d4ed8; /* Azul más oscuro */
+}
+
+/* Efecto de hundimiento al clickear */
+.btnGuardar:active {
+  transform: scale(0.98);
+}
+
+/* Estado deshabilitado del botón cuando loading es true */
+.btnGuardar:disabled {
+  background-color: #a0aec0; /* Gris */
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+
+/*--------------*/
+.accionesFormulario {
+  display: flex;
+  gap: 12px; /* Deja espacio horizontal entre ambos botones */
+  margin-top: 15px;
+}
+
+.btnCancelar {
+  background-color: #6c757d; /* Color gris */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btnCancelar:hover {
+  background-color: #5a6268;
+}

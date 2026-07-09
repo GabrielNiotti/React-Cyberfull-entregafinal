@@ -1,0 +1,115 @@
+/* Contenedor principal de la tarjeta */
+.tarjeta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 280px;
+  margin: 10px;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del producto */
+.imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Información de texto (Nombre y Precio) */
+.info {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.info h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: #333333;
+  font-weight: 600;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2b9348; /* Color verde para el precio */
+  margin: 0;
+}
+
+/* Botón de favoritos (Estrella) */
+.botonFavorito {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.1s ease;
+}
+
+.botonFavorito:hover {
+  transform: scale(1.2);
+}
+
+/* Badge de Oferta Especial */
+.badgeOferta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ff3b30; /* Rojo llamativo */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de acciones (Contador + Botón Agregar) */
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto; /* Empuja las acciones al fondo si las tarjetas varían de altura */
+}
+
+/* Botón Agregar al carrito */
+.botonAgregar {
+  width: 100%;
+  background-color: #007bff; /* Azul estándar corporativo */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botonAgregar:hover {
+  background-color: #0056b3;
+}
+
+.botonAgregar:active {
+  transform: scale(0.98);
+}
