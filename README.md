@@ -63,34 +63,6 @@ src/
 
 ---
 
-## ⚙️ Instalación
-
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/TU_USUARIO/CyberFull.git
-```
-
-### 2. Ingresar al proyecto
-
-```bash
-cd CyberFull
-```
-
-### 3. Instalar dependencias
-
-```bash
-npm install
-```
-
-### 4. Ejecutar el proyecto
-
-```bash
-npm run dev
-```
-
----
-
 ## 🔐 Variables de entorno
 
 El proyecto utiliza Firebase.
